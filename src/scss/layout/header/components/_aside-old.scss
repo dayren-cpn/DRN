@@ -1,0 +1,78 @@
+// aside {
+//   position: absolute;
+//   top: 0;
+
+//   width: $dynamic-size;
+//   height: 100%;
+//   padding-top: $dynamic-size;
+//   backdrop-filter: blur(10px);
+//   @include flex-center;
+//   flex-direction: column;
+//   z-index: 5;
+// }
+
+// .aside-decoration {
+//   flex: 1 0 0;
+//   width: 100%;
+//   background-image: url(../img/dist/decoration.svg);
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
+
+// .aside-social {
+//   flex: 1 0 0;
+// }
+
+// .social__item {
+//   width: clamp(2.188rem, 1.563rem + 2.083vw, 3.438rem);
+//   height: clamp(2.188rem, 1.563rem + 2.083vw, 3.438rem);
+//   @include flex-center;
+//   margin: 3px 0;
+//   background-color: $deep;
+//   opacity: 0.7;
+//   overflow: hidden;
+  
+//   backdrop-filter: blur(2px);
+//   border: 1px solid rgba(255, 255, 255, 0.2);
+//   border-right-color: rgba(255, 255, 255, 0.1);
+//   border-bottom-color: rgba(255, 255, 255, 0.1);
+
+//   transition: $transition;
+
+//   img {
+//     width: 17px;
+//     height: auto;
+//     max-height: 17px;
+//     opacity: 0.7;
+
+//     transition: all 0.5s ease-out;
+//   }
+
+//   @media (any-hover: hover) {
+//     &:hover {
+//       img {
+//         scale: 1.7;
+//         opacity: 1;
+//       }
+//     }
+//   }
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     right: -90px;
+//     display: block;
+//     width: 30%;
+//     height: 100%;
+//     background: rgba(255, 255, 255, 0.7);
+//     filter: blur(7px);
+//     transition: 800ms;
+//     transform: skewX(45deg);
+//   }
+
+//   @media (any-hover: hover) {
+//     &:hover::before {
+//       transform: skewX(45deg) translateX(calc(240px * -1 - 50%));
+//     }
+//   }
+// }

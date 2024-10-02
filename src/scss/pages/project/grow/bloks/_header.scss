@@ -1,0 +1,69 @@
+.gr-header {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: clamp(2rem, 1.6rem + 2vw, 4rem);
+  padding-top: calc($gr-index);
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.gr-logo {
+  display: block;
+  width: 11rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.gr-nav {
+  display: flex;
+  justify-content: end;
+  flex: 1;
+}
+
+.gr-nav ul {
+  gap: clamp(0.5rem, 0.2rem + 1.5vw, 2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gr-nav li > * {
+  position: relative;
+  color: $gr-gray-color;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.gr-nav li > *::before,
+.gr-nav li > *::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 11px;
+  height: 1px;
+  top: -2px;
+  margin: 0 0.3rem;
+  vertical-align: middle;
+  border-radius: 10em;
+  background-color: $gr-accent-color;
+  visibility: hidden;
+}
+
+.gr-nav li.active > *,
+.gr-nav li:hover > * {
+  color: $gr-white-color;
+}
+
+.gr-nav li.active > *::before,
+.gr-nav li:hover > *::before,
+.gr-nav li.active > *::after,
+.gr-nav li:hover > *::after {
+  visibility: visible;
+}
+

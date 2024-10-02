@@ -1,0 +1,52 @@
+// COLOR
+$accent: brown; // Accent color
+
+$text-color: #333; // Text color
+$dark: #303030;
+$deep: #252525;
+
+// BLOCK SIZE
+$index: calc(1vw + 1vh);
+// $size: calc($index * 2);
+$min-size: 3.125rem; // 50px
+$max-size: 4.375rem; // 70px
+$dynamic-size: clamp($min-size, 2.768rem + 1.79vw, $max-size); // vp 320 - 1440
+
+// FONT SIZE
+$min-fontSize: 0.75rem; // 12px
+$max-fontSize: 1rem; // 16px
+$dynamic-fontSize: clamp(
+  $min-fontSize,
+  0.679rem + 0.357vw,
+  $max-fontSize
+); // vp 320 - 1440
+// FONT SIZE TITLE
+$min-fontSize__title: 2rem; // 32px
+$max-fontSize__title: 6rem; // 96px
+$fontSize-title: clamp(
+  $min-fontSize__title,
+  1.429rem + 2.86vw,
+  $max-fontSize__title
+);
+
+// FONT SETTINGS
+$line-height: 1.7;
+$user-font: poiret, sans-serif;
+$logo-font: dune, sans-serif;
+$system-font: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+$border-opacity: 0.1;
+
+// CATALOG
+$gutter: 10px; // отступ между элементами
+
+$side-small: 15; // размер
+$side-big: 25; // элементов
+
+$depth: 4000px;
+
+$transition: 0.75s cubic-bezier(0.075, 0.5, 0, 1);
+
+// переопределены новые переменные эти удалить и заменить на новые
+$block-size: clamp(3.125rem, 2.5rem + 2.083vw, 4.375rem);
+$font-size: clamp(0.75rem, 0.679rem + 0.357vw, 1rem);

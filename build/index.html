@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Dayren</title>
+	<link rel="shortcut icon" href="./img/dist/logo-DRN.png" type="image/x-icon">
+	<!-- <link rel="icon" href="./img/dist/logo-DRN.svg"> -->
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<!-- ===== font-awesome CDN ===== -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+	<!-- HEADER -->
+	<header class="home-header">
+
+   <div class="top-line">
+    <!-- LOGO -->
+    <a href="../index.html" class="logo">
+        <span class="logo-images__wrapper">
+            <img src="../img/dist/logo-DRN.svg" alt="drn-logo" class="logo-imeges">
+        </span>
+        <span class="logo-text">dayren</span>
+    </a>
+    <!-- DECORATION -->
+    <div class="top-line__decoration"></div>
+    <!-- CONTACTS -->
+    <div class="top-line__contacts">
+        <span class="top-line__phone">Телефон:
+            <span class="top-line__number">678 51 03</span>
+        </span>
+
+        <span class="top-line__separator"></span>
+        <span class="top-line__address">город:
+            <span class="top-line_text">Гродно</span>
+        </span>
+    </div>
+    <!-- DECORATION -->
+    <div class="top-line__decoration"></div>
+    <!-- MENU -->
+    <div class="menu-container">
+        <div class="menu">
+
+   <nav class="nav" data-menu>
+      <ul class="nav-list">
+         <li class="nav-list__item" data-text-effect><a href="./index.html">Главная</a></li>
+         <li class="nav-list__item" data-text-effect><a href="./pages/catalog.html">Портфолио</a></li>
+         <li class="nav-list__item" data-text-effect><a href="">Контакты</a></li>
+      </ul>
+   </nav>
+
+   <button class="dropdown" data-button>
+      <span></span>
+      <span></span>
+      <span></span>
+   </button>
+
+</div>
+    </div>
+</div>
+
+   <div class="home-header__content">
+
+      <aside>
+
+   <div class="aside-decoration"></div>
+
+   <div class="aside-social">
+      <a href="https://www.instagram.com/darthsairex/" target="_blank">
+         <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="">
+         <i class="fa-brands fa-whatsapp"></i>
+      </a>
+   </div>
+</aside>
+
+
+      <div class="slider">
+   <!-- TEXT -->
+   <div class="slider-content">
+
+      <div class="swiper-wrapper">
+         <!--  SLIDE TEXT / ONE -->
+         <div class="swiper-slide slider-content__slide">
+            <div class="slider-text">
+               <div class="slider-text__wrapper">
+                  <h2>Разработка <span>Cайтов</span></h2>
+                  <p>если получится</p>
+               </div>
+               <button id="openDialog1" class="button slider-button__position">
+                  <a>Оставить заявку</a>
+               </button>
+            </div>
+         </div>
+         <!-- SLIDE TEXT /TWO -->
+         <div class="swiper-slide slider-content__slide">
+            <div class="slider-text">
+               <div class="slider-text__wrapper">
+                  <h2>По вашим <span class="slider-text__sp">Макетам</span></h2>
+               </div>
+            </div>
+         </div>
+         <!-- SLIDE TEXT / THREE  -->
+         <div class="swiper-slide slider-content__slide">
+            <div class="slider-text">
+               <div class="slider-text__wrapper">
+                  <h2>Оформить <span>Заказ</span></h2>
+               </div>
+               <button id="openDialog2" class="button slider-button__position">
+                  <a>Оставить заявку</a>
+               </button>
+            </div>
+         </div>
+      </div>
+
+   </div>
+   <!-- IMAGES -->
+   <div class="slider-img">
+      <div class="swiper-wrapper">
+         <!-- SLIDE ONE IMAGES -->
+         <div class="swiper-slide slider-img__slide">
+            <div class="slider-img__bg" data-swiper-parallax="-50"
+               style="background-image: url(img/dist/slide-images/1.jpg);"></div>
+         </div>
+         <!-- SLIDE TWO IMAGES -->
+         <div class="swiper-slide slider-img__slide">
+            <div class="slider-img__bg" data-swiper-parallax="-70"
+               style="background-image: url(img/dist/slide-images/2.jpg);"></div>
+         </div>
+         <!-- SLIDE THREE IMAGES -->
+         <div class="swiper-slide slider-img__slide">
+            <div class="slider-img__bg" data-swiper-parallax="-50"
+               style="background-image: url(img/dist/slide-images/3.jpg);"></div>
+         </div>
+      </div>
+   </div>
+
+   <div class="slider-bottom">
+      <!-- PAGINATION -->
+      <div class="slider-pagination">
+         <div class="swiper-pagination"></div>
+      </div>
+      <!-- SCROLLBAR -->
+      <div class="slider-scrollbar">
+         <div class="swiper-scrollbar"></div>
+      </div>
+      <!-- NAVIGATION -->
+      <div class="slider-navigation">
+         <div class="slider-navigation__container">
+            <div class="swiper-button-prev swiper-btn-prev"></div>
+            <div class="swiper-button-next swiper-btn-next"></div>
+         </div>
+      </div>
+   </div>
+
+</div>
+
+   </div>
+
+   <dialog id="dialog" class="drn-dialog scale-center ">
+
+  <div class="dialog-header">
+    <h2>Оставить заявку</h2>
+    <button id="closeDialog" class="closeDialogBtn">
+      <span>X</span>
+    </button>
+  </div>
+
+  <div class="form-container">
+    <form action="#">
+
+      <div class="inputBox">
+        <input type="text" required="required">
+        <span>ваше имя</span>
+        <i></i>
+      </div>
+
+      <div class="inputBox">
+        <input type="tel" required="required">
+        <span>ваш телефон</span>
+        <i></i>
+      </div>
+
+      <div class="inputBox">
+        <textarea name="massage" cols="30" rows="10" required="required"></textarea>
+        <span>Сообщение</span>
+        <i></i>
+      </div>
+
+      <button class="button-modal btn" type="submit">
+        <a>Отправить</a>
+      </button>
+    </form>
+  </div>
+
+</dialog>
+
+
+<script>
+  const dialog = document.querySelector('#dialog')
+
+  // button 1   
+  const openDialog1 = document.querySelector('#openDialog1')
+  openDialog1.addEventListener('click', () => {
+    dialog.showModal()
+  })
+
+  // button 2   
+  const openDialog2 = document.querySelector('#openDialog2')
+  openDialog2.addEventListener('click', () => {
+    dialog.showModal()
+  })
+
+  closeDialog.addEventListener('click', () => {
+    dialog.close()
+
+  })
+</script>
+
+</header>
+
+
+
+
+
+
+
+	<script src="./js/index.bundle.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+		integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script>
+		VanillaTilt.init(document.querySelectorAll(".aside-social a"), {
+			max: 25,
+			speed: 1000,
+			glare: true,
+			transition: true,
+		});
+	</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+.hp-footer {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: calc($hp-index * 5);
+  padding-bottom: calc($hp-index * 5);
+  gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .hp-footer {
+    flex-wrap: wrap;
+  }
+}
+
+
+.hp-footer-logo img {
+  width: 2rem;
+}
+
+.hp-footer-content h3 {
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.hp-footer-links {
+  margin-left: 1rem;
+}
+
+.hp-footer-links li {
+  padding: 0.1rem 0;
+  color: gray;
+  transition: color 0.5s ease;
+
+  &:hover {
+    color: white;
+  }
+}
+
+// FORM
+.hp-footer-wrapper {
+  position: relative;
+}
+
+.hp-footer-form {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: calc($hp-index * 1);
+  margin-bottom: 1.25rem;
+  background-color: $hp-container-color;
+  border-radius: 0.5rem;
+
+  input {
+    position: relative;
+    width: 50%;
+    color: white;
+    background-color: $hp-container-color;
+  }
+
+  input::placeholder {
+    color: $hp-text-color;
+  }
+
+  button {
+    background-color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+}
+
+.hp-footer-social a {
+  display: inline-flex;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: white;
+  background-color: $hp-container-color;
+  transition: background-color 0.75s ease-out;
+
+  &:hover {
+    background-color: black;
+  }
+}
