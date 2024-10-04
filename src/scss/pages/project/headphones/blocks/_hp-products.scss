@@ -12,20 +12,40 @@
   opacity: 0;
   animation: hpProductCards;
   animation-timeline: view();
-  animation-range: 5%;
+  animation-range: 10%;
 }
 @keyframes hpProductCards {
   to {
     opacity: 1;
   }
 }
+@media (max-width: 540px) {
+  .hp-products-container {
+    opacity: 1;
+  }
+}
 
 .hp-product-card {
   position: relative;
-  width: clamp(9rem, 6.714rem + 11.43vw, 17rem);
+  width: clamp(12rem, 10.571rem + 7.14vw, 17rem);
   height: clamp(10rem, 9.143rem + 4.29vw, 13rem);
   border-radius: 0.5rem;
   background-color: $hp-container-color;
+}
+@media (max-width: 540px) {
+  .hp-product-card {
+    opacity: 0;
+    transform: scale(.3);
+    animation: hpProductCard forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+  }
+}
+@keyframes hpProductCard {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .hp-product-card::before {
@@ -63,7 +83,11 @@
   left: 50%;
   transform: translateX(-50%);
 }
-
+@media (max-width: 768px) {
+  .hp-product-card img {
+    top: calc($hp-index * -5.5);
+  }
+}
 
 .hp-product-content {
   position: absolute;

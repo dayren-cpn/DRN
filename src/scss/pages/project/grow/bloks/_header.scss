@@ -11,6 +11,11 @@
   justify-content: center;
   z-index: 10;
 }
+@media (max-width: 768px) {
+  .gr-header {
+    justify-content: space-between;
+  }
+}
 
 .gr-logo {
   display: block;
@@ -25,15 +30,20 @@
   justify-content: end;
   flex: 1;
 }
+@media (max-width: 768px) {
+  .gr-nav {
+    display: none;
+  }
+}
 
 .gr-nav ul {
-  gap: clamp(0.5rem, 0.2rem + 1.5vw, 2rem);
+  // gap: clamp(0.5rem, 0.2rem + 1.5vw, 2rem);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.gr-nav li > * {
+.gr-nav ul li > * {
   position: relative;
   color: $gr-gray-color;
   text-transform: uppercase;
@@ -66,4 +76,3 @@
 .gr-nav li:hover > *::after {
   visibility: visible;
 }
-

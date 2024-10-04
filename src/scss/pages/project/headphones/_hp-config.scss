@@ -1,37 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+$hp-index: calc(1vw + 1vh);
+
 // COLOR
 $hp-hue-color: 206;
-$hp-black-color: hsl($hp-hue-color, 4%, 4%);
-$hp-black-color-alt: hsl($hp-hue-color, 4%, 8%);
-$hp-title-color: hsl($hp-hue-color, 4%, 95%);
 $hp-text-color: hsl($hp-hue-color, 4%, 75%);
-$hp-text-color-light: hsl($hp-hue-color, 4%, 65%);
-$hp-white-color: #fff;
 $hp-body-color: hsl($hp-hue-color, 4%, 6%);
 $hp-container-color: hsl($hp-hue-color, 4%, 10%);
 $hp-text-gradient: line-gradient(hsl($hp-hue-color, 4%, 24%)),
   hsl($hp-hue-color, 4%, 8%);
-$hp-scroll-thumb-color: hsl($hp-hue-color, 4%, 16%);
-$hp-scroll-thumb-alt: hsl($hp-hue-color, 4%, 20%);
 
 // FONT AND TYPOGRAPHY
 $hp-body-font: "Poppins", sans-serif;
-$hp-biggest-font-size: clamp(3rem, 2.429rem + 2.86vw, 5rem);
 $hp-bigger-font-size: 3.5rem;
-$hp-big-font-size: 2.5rem;
-$hp-h2-font-size: 1.25rem;
-$hp-h3-font-size: 1.125rem;
 $hp-normal-font-size: 0.938rem;
-$hp-small-font-size: 0.813rem;
-$hp-smaller-font-size: 0.75rem;
-$hp-text-line-height: 2rem;
-
-// FONT WEIGHT
-$hp-font-medium: 500;
-$hp-font-semi-bold: 600;
-
-$hp-index: calc(1vw + 1vh);
 
 .hp-body {
   position: relative;
@@ -71,7 +53,6 @@ $hp-index: calc(1vw + 1vh);
   animation: hpTitle;
   animation-timeline: view();
   animation-range: entry 0 cover 40%;
- 
 }
 @keyframes hpTitle {
   0% {

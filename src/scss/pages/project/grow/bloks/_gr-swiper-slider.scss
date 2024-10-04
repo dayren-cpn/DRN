@@ -34,10 +34,24 @@
   line-height: 1;
 }
 
+.gr-slide__content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .gr-slide__content h1 {
+  width: 80%;
   font-size: calc($gr-index * 10);
   text-transform: uppercase;
   font-weight: 900;
+}
+@media (max-width: 768px) {
+  .gr-slide__content h1 {
+    font-size: calc($gr-index * 8);
+  }
 }
 
 .letters .letter {
@@ -63,26 +77,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: calc($gr-index);
 }
 
 .gr-slide__content__info p {
   display: inline-block;
+  width: 80%;
   max-width: 560px;
   font-weight: 600;
   line-height: 1.4;
 }
 
 .gr-slide__content__info button {
-  width: 13rem;
-  height: 3rem;
+  width: clamp(10rem, 9.143rem + 4.29vw, 13rem);
+  height: clamp(2rem, 1.714rem + 1.43vw, 3rem);
   color: black;
   background-color: $gr-accent-color;
   border-radius: 10em 0 10em 10em;
   text-transform: uppercase;
-  letter-spacing: 0.17rem;
-  font-size: 0.9rem;
+  //letter-spacing: 0.17rem;
+  //font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.25s ease-out;
+}
+@media (max-width: 768px) {
+  .gr-slide__content__info button {
+    //letter-spacing: 0.10rem;
+    //font-size: 0.5rem;
+  }
 }

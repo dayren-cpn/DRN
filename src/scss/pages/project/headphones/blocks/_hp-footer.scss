@@ -1,18 +1,28 @@
 .hp-footer {
   width: 95%;
-  margin: 0 auto;
+  margin: auto;
   padding-top: calc($hp-index * 5);
   padding-bottom: calc($hp-index * 5);
   gap: 2rem;
   display: flex;
   justify-content: space-between;
 }
+.hp-footer-top {
+  width: 50%;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
 @media (max-width: 1024px) {
   .hp-footer {
     flex-wrap: wrap;
   }
-}
 
+  .hp-footer-top {
+    width: 100%;
+  }
+}
 
 .hp-footer-logo img {
   width: 2rem;
@@ -36,6 +46,17 @@
 
   &:hover {
     color: white;
+  }
+}
+
+.hp-footer-bottom {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 1024px) {
+  .hp-footer-bottom {
+    width: 100%;
   }
 }
 
