@@ -1,9 +1,15 @@
 import catalogScroll from './modules/drn/catalog.js';
 
-// import dialogModal from './modules/drn/dialogModal.js';
+import dialogModal from './modules/drn/dialogModal.js';
 
 import dropDownMenu from './modules/drn/dropDownMenu.js';
 
 import swiperSlider from './modules/drn/swiperSlider.js';
 
+import headphonesPage from './modules/pages/headphones';
 
+
+// PAGES
+//import growPage from './modules/pages/grow.js';
+
+//import growPage from './modules/pages/headphones.js'; 

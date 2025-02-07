@@ -29,23 +29,15 @@ $fontSize-title: clamp(
   $max-fontSize__title
 );
 
+$border-opacity: 0.1;
+
+$transition: 0.75s cubic-bezier(0.075, 0.5, 0, 1);
+
 // FONT SETTINGS
 $line-height: 1.7;
 $user-font: poiret, sans-serif;
 $logo-font: dune, sans-serif;
 $system-font: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
-
-$border-opacity: 0.1;
-
-// CATALOG
-$gutter: 10px; // отступ между элементами
-
-$side-small: 15; // размер
-$side-big: 25; // элементов
-
-$depth: 4000px;
-
-$transition: 0.75s cubic-bezier(0.075, 0.5, 0, 1);
 
 // переопределены новые переменные эти удалить и заменить на новые
 $block-size: clamp(3.125rem, 2.5rem + 2.083vw, 4.375rem);

@@ -17,21 +17,23 @@
 
 <body class="gr-body">
 
-
    <!-- ===== HEADER ===== -->
    <header class="gr-header">
-      <a href="#" class="gr-logo">
+      <a href="../../catalog.html" class="gr-logo">
          <img src="../../../img/catalog/Grow/logo.svg" alt="grow-logo">
       </a>
-      <nav class="gr-nav">
+
+      <nav class="gr-nav" data-grNavActive>
          <ul>
             <li><a href="">main</a></li>
             <li><a href="">info</a></li>
             <li><a href="">contact</a></li>
          </ul>
       </nav>
-      <button class="gr-button"><a href="">plant now</a></button>
-      <button class="gr-dropdown">
+
+      <button class="gr-button">plant now</button>
+
+      <button class="gr-dropdown-button" data-growButtonMenu aria-label="Открыть меню" aria-expanded="false">
          <span></span>
          <span></span>
          <span></span>
@@ -41,11 +43,46 @@
    <!--  ===== GROW SWIPER SLIDER ===== -->
    <div class="swiper gr-swiper">
 
+      <div class="gr-slider-ui">
+
+         <div class="gr-slider-ui__wrapper">
+            <div class="gr-slide-content gr-slide-active">
+               <h1 class="letters">grow</h1>
+               <div class="gr-slide-content__info">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, beatae nemo atque dicta
+                     deserunt
+                     aspernatur!</p>
+                  <button>Palnt a tree now</button>
+               </div>
+            </div>
+
+            <div class="gr-slide-content">
+               <h1 class="letters">live</h1>
+               <div class="gr-slide-content__info">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, beatae nemo atque dicta
+                     deserunt
+                     aspernatur!</p>
+                  <button>Palnt a tree now</button>
+               </div>
+            </div>
+
+            <div class="gr-slide-content">
+               <h1 class="letters">wood</h1>
+               <div class="gr-slide-content__info">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, beatae nemo atque dicta
+                     deserunt
+                     aspernatur!</p>
+                  <button>Palnt a tree now</button>
+               </div>
+            </div>
+         </div>
+
+      </div>
 
       <div class="swiper-wrapper">
 
-         <!-- ===== SLIDE ===== -->
-         <div class="swiper-slide gr-slider-item">
+         <!-- ===== SLIDE =====  -->
+         <div class="swiper-slide gr-swiper-slide">
             <div class="gr-slider-layer" data-swiper-parallax="35%"
                style="background-image: url(../../../img/catalog/Grow/slides/slide-1-layer-back.jpg);">
             </div>
@@ -55,24 +92,10 @@
             <div class="gr-slider-layer" data-swiper-parallax="13%"
                style="background-image: url(../../../img/catalog/Grow/slides/slide-1-layer-front.png);">
             </div>
-
-            <!-- ===== IU ===== -->
-            <div class="gr-slider-wrapper">
-               <div class="gr-slide__content swiper-slide-active">
-                  <h1 class="letters">grow</h1>
-                  <div class="gr-slide__content__info">
-                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, beatae nemo atque dicta
-                        deserunt
-                        aspernatur!</p>
-                     <button>Palnt a tree now</button>
-                  </div>
-               </div>
-            </div>
-
          </div>
 
-         <!-- ===== SLIDE ===== -->
-         <div class="swiper-slide gr-slider-item">
+         <!-- ===== SLIDE =====  -->
+         <div class="swiper-slide gr-swiper-slide">
             <div class="gr-slider-layer" data-swiper-parallax="35%"
                style="background-image: url(../../../img/catalog/Grow/slides/slide-2-layer-back.jpg);">
             </div>
@@ -82,24 +105,10 @@
             <div class="gr-slider-layer" data-swiper-parallax="13%"
                style="background-image: url(../../../img/catalog/Grow/slides/slide-2-layer-front.png);">
             </div>
-
-            <!-- ===== IU ===== -->
-            <div class="gr-slider-wrapper">
-               <div class="gr-slide__content">
-                  <h1 class="letters">live</h1>
-                  <div class="gr-slide__content__info">
-                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, beatae nemo atque dicta
-                        deserunt
-                        aspernatur!</p>
-                     <button>Palnt a tree now</button>
-                  </div>
-               </div>
-            </div>
-
          </div>
 
-         <!-- ===== SLIDE ===== -->
-         <div class="swiper-slide gr-slider-item">
+         <!-- ===== SLIDE =====  -->
+         <div class="swiper-slide gr-swiper-slide">
             <div class="gr-slider-layer" data-swiper-parallax="35%"
                style="background-image: url(../../../img/catalog/Grow/slides/slide-3-layer-back.jpg);">
             </div>
@@ -109,54 +118,47 @@
             <div class="gr-slider-layer" data-swiper-parallax="13%"
                style="background-image: url(../../../img/catalog/Grow/slides/slide-3-layer-front.png);">
             </div>
-
-            <!-- ===== IU ===== -->
-            <div class="gr-slider-wrapper">
-               <div class="gr-slide__content">
-                  <h1 class="letters">wood</h1>
-                  <div class="gr-slide__content__info">
-                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, beatae nemo atque dicta
-                        deserunt
-                        aspernatur!</p>
-                     <button>Palnt a tree now</button>
-                  </div>
-               </div>
-            </div>
-
          </div>
 
       </div>
-
    </div>
 
+
+   <script>
+      const grButton = document?.querySelector('[data-growButtonMenu]')
+      const grNavActive = document?.querySelector('[data-grNavActive]')
+
+      grButton?.addEventListener('click', () => {
+         grButton.classList.toggle('gr-dropdown-active')
+         grNavActive.classList.toggle('gr-nav-active')
+      })
+
+
+      // ===== SWIPER SLIDER JS =====
+      const swiper = new Swiper('.gr-swiper', {
+         mousewheel: true,
+         direction: 'vertical',
+         speed: 1700,
+         parallax: true,
+      })
+
+
+      document.querySelectorAll('.gr-slide-content h1').forEach(e => {
+         e.innerHTML = e.textContent.replace(/ (-|#|@){1}/g, s => s[1] + s[0]).replace(/(\S*)/g, m => {
+            return m.replace(/\S(-|#|@)?/g, '<span class="letter">$&</span>')
+         })
+         e.querySelectorAll('.letter').forEach(function (l, i) {
+            l.setAttribute('style', `z-index: -${i}; transition-duration: ${i / 5 + 1}s`)
+         })
+      })
+
+      swiper.on('slideChange', function () {
+         document.querySelectorAll('.gr-slide-content').forEach(function (e, i) {
+            return swiper.activeIndex === i ? e.classList.add('gr-slide-active') : e.classList.remove('gr-slide-active')
+         })
+      })
+   </script>
+
 </body>
-
-
-<script>
-   // ===== SWIPER SLIDER JS =====
-   const grSwiper = new Swiper('.gr-swiper', {
-      mousewheel: true,
-      direction: 'vertical',
-      speed: 1700,
-      parallax: true,
-   })
-
-
-   document.querySelectorAll('.gr-slide__content h1').forEach(e => {
-      e.innerHTML = e.textContent.replace(/ (-|#|@){1}/g, s => s[1] + s[0]).replace(/(\S*)/g, m => {
-         return m.replace(/\S(-|#|@)?/g, '<span class="letter">$&</span>')
-      })
-      e.querySelectorAll('.letter').forEach(function (l, i) {
-         l.setAttribute('style', `z-index: -${i}; transition-duration: ${i / 5 + 1}s`)
-      })
-   })
-
-   // swiper.on('slideChange', function () {
-   //    document.querySelectorAll('.gr-slide__content').forEach(function (e, i) {
-   //       return swiper.activeIndex === i ? e.classList.add('gr-active') : e.classList.remove('gr-active')
-   //    })
-   // })
-
-</script>
 
 </html>

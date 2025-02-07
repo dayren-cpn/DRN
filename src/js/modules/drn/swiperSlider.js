@@ -41,11 +41,6 @@ sliderImg.controller.control = sliderText;
 sliderText.controller.control = sliderImg;
 
 
-// const csSwiper = new Swiper('.cs-swiper', {
-//    mousewheel: true,
-// })
-
-
 
 
 

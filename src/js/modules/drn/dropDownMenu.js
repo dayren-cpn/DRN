@@ -4,7 +4,7 @@ const activeButton = document?.querySelector('[data-button]')
 activeButton?.addEventListener('click', () => {
    activeButton.classList.toggle('active-icon')
    activeMenu.classList.toggle('active')
-
+   
 })
 
 

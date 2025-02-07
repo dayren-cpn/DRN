@@ -1,11 +1,9 @@
-
 @media (max-width: 1024px) {
   .cs-footer-form_container {
     position: relative;
   }
 }
-
-.cs-form {
+.cs-form.cs-form {
   display: inline-block;
   width: clamp(16.81rem, 14.239rem + 12.86vw, 25.81rem);
   height: 15.62rem;

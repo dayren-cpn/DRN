@@ -1,4 +1,4 @@
-.button {
+.button-v1{
   position: relative;
   display: inline-block;
   width: clamp(9.375rem, 8.125rem + 6.25vw, 13.75rem);
@@ -16,10 +16,6 @@
     background-color: $accent;
     opacity: 0.3;
     transition: 0.25s ease-out;
-  }
-  &:hover::before {
-    //  box-shadow: 0 0 5px $accent, 0 0 15px $accent, 0 0 30px $accent,
-    //   0 0 60px $accent;
   }
 
   a {

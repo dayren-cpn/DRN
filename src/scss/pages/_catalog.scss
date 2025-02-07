@@ -1,3 +1,11 @@
+// CATALOG
+$gutter: 10px; // отступ между элементами
+
+$side-small: 15; // размер
+$side-big: 25; // элементов
+
+$depth: 4000px;
+
 .catalog {
   height: $depth;
   background-color: $deep;
@@ -54,7 +62,7 @@
 
   img {
     filter: brightness(70%);
-    transition: filter .5s ease;
+    transition: filter 0.5s ease;
   }
 
   img:hover {

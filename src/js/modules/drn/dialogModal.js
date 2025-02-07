@@ -1,18 +1,37 @@
 const dialog = document.querySelector('#dialog')
+const openDialog = document.querySelector('#openDialog')
+const dialogBackground = document.querySelector('#dialog-background')
+const closeDialog = document.querySelector('#closeDialog')
 
-// button 1   
-const openDialog1 = document.querySelector('#openDialog1')
-openDialog1.addEventListener('click', () => {
+const openModal = () => {
+   dialogBackground.style.display = 'block';
    dialog.showModal()
-})
+}
+openDialog?.addEventListener('click', openModal)
 
-// button 2   
-const openDialog2 = document.querySelector('#openDialog2')
-openDialog2.addEventListener('click', () => {
-   dialog.showModal()
-})
 
-closeDialog.addEventListener('click', () => {
+closeDialog?.addEventListener('click', () => {
+   dialogBackground.style.display = 'none'
    dialog.close()
-
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

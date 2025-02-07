@@ -22,7 +22,9 @@
 @keyframes hpCaseImg {
   to {
     opacity: 1;
-   filter: blur(0) drop-shadow(0px 0px 30px rgb(50, 50, 50));
+    filter: blur(0) drop-shadow(0px 0px 5px rgba(50, 50, 50))
+      drop-shadow(0px 0px 15px rgb(50, 50, 50))
+      drop-shadow(0px 0px 30px rgb(50, 50, 50));
     transform: translateY(0);
   }
 }

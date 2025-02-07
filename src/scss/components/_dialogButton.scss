@@ -1,14 +1,10 @@
 .button-modal {
   position: relative;
   display: inline-block;
-  width: clamp(
-    6.875rem,
-    4.911rem + 9.821vw,
-    13.75rem
-  );
+  width: 100%;
   height: clamp(2rem, 0.714rem + 2.679vw, 3.125rem);
 
-  a {
+  span {
     position: absolute;
     top: 0;
     left: 0;
@@ -27,29 +23,36 @@
     font-family: $user-font;
     letter-spacing: 1px;
     overflow: hidden;
-    transition: 1s ease-out;
-    backdrop-filter: blur(15px);
+    transition: 0.5s ease-out;
+    backdrop-filter: blur(20px);
   }
 
-  a:hover {
-    letter-spacing: 2px;
+  span:hover {
+    letter-spacing: 5px;
   }
 
-  a::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0.1), transparent);
-    transform: skew(45deg) translateX(0);
-    transition: 0.7s ease-out;
-  }
+  // a::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 50%;
+  //   height: 100%;
+  //   background: linear-gradient(to left, rgba(255, 255, 255, 0.1), transparent);
+  //   transform: skew(45deg) translateX(0);
+  //   transition: 0.5s ease-out;
+  // }
 
-  &:hover a::before {
-    transform: skewX(45deg) translateX(200%);
-  }
+  // &:hover a::before {
+  //   transform: skewX(45deg) translateX(200%);
+  // }
+
+  // &::before,
+  // &::after {
+  //   background: $accent;
+  //   box-shadow: 0 0 5px $accent, 0 0 10px $accent, 0 0 15px $accent,
+  //     0 0 60px $accent;
+  // }
 
   &::before {
     content: "";
@@ -57,18 +60,16 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: -1px;
-    width: 30%;
+    width: 35%;
     height: 2px;
     background-color: $accent;
-    transition: 0.7s ease-out;
-    transition-delay: 0s;
+    transition: 0.5s ease-out;
   }
 
   &:hover::before {
     bottom: 0;
     height: 50%;
     width: 80%;
-    transition-delay: 0.2s;
   }
 
   &::after {
@@ -77,24 +78,15 @@
     left: 50%;
     transform: translateX(-50%);
     top: -1px;
-    width: 30%;
+    width: 35%;
     height: 2px;
     background-color: $accent;
-    transition: 0.7s ease-out;
-    transition-delay: 0s;
+    transition: 0.5s ease-out;
   }
 
   &:hover::after {
     top: 0;
     height: 50%;
     width: 80%;
-    transition-delay: 0.2s;
-  }
-
-  &::before,
-  &::after {
-    background: $accent;
-    box-shadow: 0 0 5px $accent, 0 0 15px $accent, 0 0 30px $accent,
-      0 0 60px $accent;
   }
 }

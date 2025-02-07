@@ -1,0 +1,97 @@
+.openDialogButton {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  animation: start-btn 1.5s;
+  animation-fill-mode: forwards;
+   animation-delay: 1.25s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes start-btn {
+  50% {
+    height: 1px;
+    width: 100%;
+  }
+  100% {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.openDialogButton::before {
+  content: "";
+  position: absolute;
+  left: 50;
+  top: 50;
+  z-index: -10;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 0%;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.5) 5%,
+    rgba($accent, 0.5)
+  );
+  //background-color: rgba(165, 42, 42, 0.5);
+  transition: $transition;
+  animation: bg 1s;
+  animation-delay: 2.25s;
+  animation-fill-mode: forwards;
+}
+@keyframes bg {
+  to {
+    height: 140%;
+  }
+}
+
+.openDialogButton span {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  letter-spacing: 0.25em;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.075);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  transition: $transition;
+  animation: text 1.5s;
+  animation-fill-mode: forwards;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    width: 50%;
+    height: 100%;
+    z-index: 10;
+    opacity: 1;
+   
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.25),
+      transparent
+    );
+    transform: skew(145deg) translateX(0%);
+    transition: 0.33s ease-out;
+  }
+
+  &:hover::after {
+    left: 110%;
+    width: 50%;
+  }
+}
+
+@keyframes text {
+  to {
+    display: inline-flex;
+    opacity: 1;
+    filter: blur(0);
+    letter-spacing: 0.15em;
+  }
+}
