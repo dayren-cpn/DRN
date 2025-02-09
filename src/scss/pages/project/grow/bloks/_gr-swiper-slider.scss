@@ -23,32 +23,31 @@
 // SLIDER UI
 .gr-slider-ui {
   position: absolute;
-  inset: 0;
-  z-index: 10;
-  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  z-index: 5;
 }
 
-.gr-slider-ui__wrapper {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 90%;
-  flex: 1;
-  text-align: center;
+/* 0 */
+.gr-slider-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  pointer-events: none;
+  flex: 1;
+  text-align: center;
+  line-height: 1;
 }
 
+/* 1 */
 .gr-slide-content {
   position: absolute;
-  z-index: 100;
 }
 
 .gr-slide-content h1 {
-  font-size: calc($gr-index * 10);
+  font-size: calc($gr-index * 9.25);
   text-transform: uppercase;
   font-weight: 900;
   color: rgba(180, 255, 180);
@@ -57,10 +56,10 @@
 .letters .letter {
   position: relative;
   top: -5em;
-  right: calc($gr-index * -2.5);
+  right: calc($gr-index * -1.25);
   margin-left: calc($gr-index * -2.5);
   opacity: 0;
-  text-shadow: 25px 0 35px rgba(0 0 0 / .4);
+  text-shadow: 25px 0 35px rgba(0 0 0 / 0.4);
   filter: blur(10px);
   transition: $gr-transition;
 }
@@ -68,7 +67,7 @@
 .gr-slide-content.gr-slide-active .letter {
   top: 0;
   opacity: 1;
-   filter: blur(0) drop-shadow(15px -5px 20px rgba(0, 0, 0, 0.6));
+  filter: blur(0) drop-shadow(15px -5px 20px rgba(0, 0, 0, 0.6));
 }
 
 .gr-slide-content.gr-slide-active + * .letter {
@@ -83,16 +82,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
-  transition: $gr-transition .75s;
+  gap: 1.75rem;
+  transition: $gr-transition 0.75s;
 }
 
 .gr-slide-content__info p {
   display: inline-block;
   max-width: 560px;
-  width: 80%;
+  width: 75dvw;
+  padding: calc($gr-index * 0.75);
   font-weight: 600;
   line-height: 1.4;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
 }
 
 .gr-slide-content__info button {
@@ -105,12 +109,12 @@
   text-transform: uppercase;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.5s ease-out;
-
+  transition: .25s ease-out;
+ 
 }
 @media (any-hover: hover) {
   .gr-slide-content__info button:hover {
-    box-shadow: 0 0 10px #1e5b53, 0 0 15px $gr-accent-color;
+    border: 2px solid $gr-accent-color;
   }
 }
 

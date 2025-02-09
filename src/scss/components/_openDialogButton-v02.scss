@@ -1,13 +1,13 @@
-.openDialogButton {
+.open-dialog-button {
   position: relative;
   display: inline-block;
   width: 0;
   height: 0;
   cursor: pointer;
   animation: start-btn 1.5s;
-  animation-fill-mode: forwards;
-   animation-delay: 1.25s;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation-fill-mode: forwards !important;
+  animation-delay: 1.25s;
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 @keyframes start-btn {
@@ -21,7 +21,7 @@
   }
 }
 
-.openDialogButton::before {
+.open-dialog-button::before {
   content: "";
   position: absolute;
   left: 50;
@@ -39,7 +39,7 @@
   transition: $transition;
   animation: bg 1s;
   animation-delay: 2.25s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards !important;
 }
 @keyframes bg {
   to {
@@ -47,7 +47,7 @@
   }
 }
 
-.openDialogButton span {
+.open-dialog-button span {
   position: absolute;
   inset: 0;
   display: flex;
@@ -61,7 +61,7 @@
   overflow: hidden;
   transition: $transition;
   animation: text 1.5s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards !important;
 
   &::after {
     content: "";
@@ -71,7 +71,7 @@
     height: 100%;
     z-index: 10;
     opacity: 1;
-   
+
     background: linear-gradient(
       to left,
       rgba(255, 255, 255, 0.25),

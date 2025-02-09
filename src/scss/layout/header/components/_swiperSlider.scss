@@ -15,6 +15,12 @@
 .slider-content__slide {
   @include flex-center;
 }
+@media (max-width: 770px) {
+  .slider-content__slide {
+    justify-content: end;
+    padding-right: calc($index * 1);
+  }
+}
 
 .slider-text {
   position: relative;
@@ -45,12 +51,12 @@
       opacity: 0;
       line-height: 1;
       font-family: $user-font;
-      font-size: $fontSize-title;
+      font-size: clamp(1.75rem, 0.536rem + 6.07vw, 6rem);
       border-right: 1px solid $accent;
       white-space: nowrap;
       overflow: hidden;
       animation: typing 1.5s forwards cubic-bezier(0.6, 0, 0.3, 1);
-      animation-delay: .25s;
+      animation-delay: 0.25s;
 
       span {
         color: $accent;
