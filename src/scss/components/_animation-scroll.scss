@@ -1,0 +1,44 @@
+.animation-scroll {
+  display: block;
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  width: 26px;
+  height: 46px;
+  margin: 0 auto 0 -26px;
+  border: 2px solid whitesmoke;
+  border-radius: 13px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -10;
+    border-radius: inherit;
+   
+  }
+
+  span {
+    display: block;
+    width: 4px;
+    height: 4px;
+    margin: 6px auto;
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    animation: scroll 1.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
