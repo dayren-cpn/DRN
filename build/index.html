@@ -25,9 +25,6 @@
    <div class="top-line">
     <!-- LOGO -->
     <a href="./index.html" class="logo">
-        <!-- <span class="logo-images__wrapper">
-            <img src="../img/dist/logo-DRN.png" alt="drn-logo" class="logo-imeges">
-        </span> -->
         <img src="./img/dist/logo-DRN.svg" alt="">
         <span class="logo-text">dayren</span>
     </a>
@@ -35,13 +32,13 @@
     <div class="top-line__decoration"></div>
     <!-- CONTACTS -->
     <div class="top-line__contacts">
-        <span class="top-line__phone">Телефон:
-            <span class="top-line__number">678 51 03</span>
+        <span class="top-line__phone">Phone:
+            <span class="top-line__number">+375 (33) 678 51 03</span>
         </span>
 
         <span class="top-line__separator"></span>
-        <span class="top-line__address">город:
-            <span class="top-line_text">Гродно</span>
+        <span class="top-line__address">city:
+            <span class="top-line_text">Grodno</span>
         </span>
     </div>
     <!-- DECORATION -->
@@ -52,9 +49,9 @@
 
    <nav class="nav" data-menu>
       <ul class="nav-list">
-         <li class="nav-list__item" data-text-effect><a href="./index.html">Главная</a></li>
-         <li class="nav-list__item" data-text-effect><a href="./pages/catalog.html">Портфолио</a></li>
-         <li class="nav-list__item" data-text-effect><a href="">Контакты</a></li>
+         <li class="nav-list__item" data-text-effect><a href="./index.html">Home</a></li>
+         <li class="nav-list__item" data-text-effect><a href="./pages/catalog.html">Portfolio</a></li>
+         <li class="nav-list__item" data-text-effect><a href="">Contacts</a></li>
       </ul>
    </nav>
 
@@ -97,14 +94,14 @@
                <div class="slider-text__wrapper">
                   <div>
                      <span></span>
-                     <h2>Разработка <span>сайтов</span></h2>
+                     <h2>Website <span>development</span></h2>
                   </div>
-                  <p>если получится</p>
+                  <p>if possible</p>
                </div>
 
                <div class="slider-button__wrapper">
-                  <button id="openDialog" class="open-dialog-button">
-                     <span>Оставить заявку</span>
+                  <button id="openDialog-btn" class="open-dialog-button">
+                     <span>Contact Us</span>
                   </button>
                </div>
 
@@ -116,16 +113,15 @@
             <div class="slider-text">
                <div class="slider-text__wrapper">
                   <div>
-                     <h2>По вашим <span>Макетам</span></h2>
+                     <h2>based on your designs </h2>
                   </div>
                </div>
             </div>
 
          </div>
          <!-- SLIDE TEXT / THREE  -->
-         <div class="swiper-slide slider-content__slide">
+         <!-- <div class="swiper-slide slider-content__slide">
             <div class="slider-text">
-
                <div class="slider-text__wrapper">
                   <div>
                      <h2>Оформить <span>Заказ</span></h2>
@@ -137,9 +133,9 @@
                      <span>Оставить заявку</span>
                   </button>
                </div>
-
             </div>
-         </div>
+         </div> -->
+
       </div>
 
    </div>
@@ -157,10 +153,10 @@
                style="background-image: url(img/dist/slide-images/2.jpg);"></div>
          </div>
          <!-- SLIDE THREE IMAGES -->
-         <div class="swiper-slide slider-img__slide">
+         <!-- <div class="swiper-slide slider-img__slide">
             <div class="slider-img__bg" data-swiper-parallax="-50"
                style="background-image: url(img/dist/slide-images/3.1.jpg);"></div>
-         </div>
+         </div> -->
       </div>
    </div>
 
@@ -190,7 +186,7 @@
   <dialog id="dialog" class="drn-dialog">
 
     <div class="dialog-header">
-      <h2>Оставить заявку</h2>
+      <h2>Your Details</h2>
       <button id="closeDialog" class="close-dialog-button">
         <span></span>
       </button>
@@ -200,24 +196,24 @@
 
       <div class="inputBox">
         <input type="text" required="required">
-        <span>ваше имя</span>
+        <span>First Name</span>
         <i></i>
       </div>
 
       <div class="inputBox">
         <input type="tel" required="required">
-        <span>ваш телефон</span>
+        <span>Phone</span>
         <i></i>
       </div>
 
       <div class="inputBox">
         <textarea name="massage" cols="30" rows="10" required="required"></textarea>
-        <span>Сообщение</span>
+        <span>Message</span>
         <i></i>
       </div>
 
       <button class="button-modal btn" type="submit">
-        <span>Отправить</span>
+        <span>Send</span>
       </button>
     </form>
     

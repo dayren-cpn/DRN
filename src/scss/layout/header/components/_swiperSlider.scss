@@ -45,11 +45,10 @@
 
     h2 {
       width: 0;
-      height: 0;
       margin: 0 auto;
       padding-right: 5px;
       opacity: 0;
-      line-height: 1;
+      line-height: 1.25;
       font-family: $user-font;
       font-size: clamp(1.75rem, 0.536rem + 6.07vw, 6rem);
       border-right: 1px solid $accent;
@@ -78,7 +77,6 @@
 @keyframes typing {
   100% {
     opacity: 1;
-    height: 100%;
     width: 100%;
     display: inline-block;
   }
@@ -114,7 +112,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(black, 0.45);
+    background-color: rgba(black, 0.5);
     z-index: 2;
   }
 }

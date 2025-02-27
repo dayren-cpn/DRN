@@ -10,6 +10,8 @@ import headphonesPage from './modules/pages/headphones';
 
 
 // PAGES
-//import growPage from './modules/pages/grow.js';
+import growPage from './modules/pages/grow.js';
 
 //import growPage from './modules/pages/headphones.js'; 
+
+import textPage from './modules/pages/testPage.js'

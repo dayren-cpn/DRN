@@ -68,20 +68,13 @@
   }
 }
 
-.hp-discount-box h3 {
-  animation: hpDiscount;
-  animation-timeline: view();
-
-}
-.hp-discount-box p {
-  animation: hpDiscount;
-  animation-timeline: view();
- 
-}
+.hp-discount-box h3,
+.hp-discount-box p,
 .hp-discount-box a {
   animation: hpDiscount;
   animation-timeline: view();
 }
+
 @keyframes hpDiscount {
   0% {
     opacity: 0;

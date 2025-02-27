@@ -3,6 +3,7 @@
 }
 
 .gr-swiper-slide {
+  position: relative;
   overflow: hidden;
   transform: scale(1.25) !important;
   transition: 2s ease !important;
@@ -109,8 +110,7 @@
   text-transform: uppercase;
   font-weight: 600;
   cursor: pointer;
-  transition: .25s ease-out;
- 
+  transition: 0.25s ease-out;
 }
 @media (any-hover: hover) {
   .gr-slide-content__info button:hover {

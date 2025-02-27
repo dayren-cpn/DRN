@@ -1,7 +1,6 @@
 import { Swiper } from 'swiper';
 import { Parallax, Mousewheel, Controller, Pagination, Scrollbar, Navigation } from 'swiper/modules';
 
-
 const sliderImg = new Swiper('.slider-img', {
 
    modules: [Parallax, Controller,],
