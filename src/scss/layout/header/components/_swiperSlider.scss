@@ -64,12 +64,11 @@
   }
 
   p {
-    text-align: end;
-    margin-top: 0.5rem;
     opacity: 0;
     filter: blur(0.25px);
-    letter-spacing: 0.25rem;
+    text-align: end;
     font-size: $dynamic-fontSize;
+    letter-spacing: 0.25rem;
     transition: 1s ease-out;
   }
 }

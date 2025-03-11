@@ -200,7 +200,7 @@
     <section class="cs-slider-container">
       <!-- SWIPER SLIDER -->
       <div class="swiper cs-swiper">
-        <div class="swiper-wrapper cs-swiper-wrapper">
+        <div class="swiper-wrapper">
 
           <!-- ===== SLIDE ===== -->
           <div class="swiper-slide cs-feedback-card">
@@ -326,26 +326,18 @@
 
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../../../js/index.bundle.js"></script>
 
   <script>
 
-    const csNavButton = document?.querySelector('[data-cs-navBtn]');
-    const csNav = document?.querySelector('[data-cs-nav]');
 
-    csNavButton?.addEventListener('click', () => {
-      csNavButton.classList.toggle('active-cs-button');
-      csNav.classList.toggle('active-cs-nav');
-    })
-
-
-    const csSwiper = new Swiper('.cs-swiper', {
-      mousewheel: true,
-      navigation: {
-        nextEl: '.cs-swiper-button-next',
-        prevEl: '.cs-swiper-button-prev',
-      },
-    })
+    // const csSwiper = new Swiper('.cs-swiper', {
+    //   mousewheel: true,
+    //   navigation: {
+    //     nextEl: '.cs-swiper-button-next',
+    //     prevEl: '.cs-swiper-button-prev',
+    //   },
+    // })
 
   </script>
 </body>

@@ -23,14 +23,14 @@
   }
 }
 
-.cs-swiper-wrapper {
-  gap: 2rem;
+.cs-swiper .swiper-wrapper {
+  gap: 1rem;
 }
 
 .cs-feedback-card {
   border-radius: 1rem;
   width: clamp(12.25rem, 7.393rem + 24.29vw, 29.25rem) !important;
-  height: clamp(22.5rem, 17.357rem + 25.71vw, 40.5rem);
+  height: clamp(30rem, 27.143rem + 14.29vw, 40.5rem);
   box-shadow: 0 20px 60px 0 rgba(163, 168, 178, 0.15);
   background: linear-gradient(135deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
 }
@@ -109,22 +109,20 @@
 
 .cs-swiper-button-wrapper {
   position: relative;
-  width: 10rem;
-  // margin-top: calc($cs-index * 3);
+  width: calc($cs-index * 6);
   padding-top: calc($cs-index * 5);
 }
 
 .cs-swiper-button-prev,
 .cs-swiper-button-next {
-  width: calc($cs-index * 2.5) !important;
-  height: calc($cs-index * 2.5) !important;
+  width: calc($cs-index * 2.5);
+  height: calc($cs-index * 2.5);
   margin: -0.25rem;
-  border-radius: 100% !important;
-  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3) !important;
-  color: $cs-color-accent !important;
+  border-radius: 100%;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+  color: $cs-color-accent;
 }
 
 :is(.cs-swiper-button-prev, .cs-swiper-button-next)::after {
-  contain: "";
-  font-size: clamp(1.75rem, 1.464rem + 1.43vw, 2.75rem) !important;
+  font-size: clamp(1rem, 0.65rem + 1.75vw, 2.75rem);
 }
