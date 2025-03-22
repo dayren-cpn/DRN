@@ -63,6 +63,9 @@
   text-shadow: 25px 0 35px rgba(0 0 0 / 0.4);
   filter: blur(10px);
   transition: $gr-transition;
+  background-image: linear-gradient(to right top, $gr-accent-color 50%, #1e5b53);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .gr-slide-content.gr-slide-active .letter {
